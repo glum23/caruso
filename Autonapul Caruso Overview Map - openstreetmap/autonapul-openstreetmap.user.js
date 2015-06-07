@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Autonapul overview map
-// @namespace    http://your.homepage/
-// @version      0.1
+// @namespace    https://github.com/autonapul/caruso
+// @version      20150607.1
 // @description  Displays overview of all cars. Parts copied from http://harrywood.co.uk/maps/examples/openlayers/marker-popups.view.html
 // @author       Zenon Kuder
 // @match        https://autonapul.carusocarsharing.com/admin/main/reservationgui/canvas/
+// @match        https://carusocarsharing.com/admin/main/reservationgui/canvas/
 // @grant        none
 // @require http://www.openlayers.org/api/OpenLayers.js
 // ==/UserScript==
@@ -28,7 +29,7 @@ var newdiv = $("<div id=#overviewDivMain> \
 <option selected>Brno \
 <option>Praha \
 <option>Ostrava \
-<option>Plzeò \
+<option>PlzeÅˆ \
 <option>Liberec \
 </select></div>");
 $("#reservation_gui").before(newdiv); // add a box above all the cars
@@ -152,7 +153,7 @@ function goToCityEvent()
             defaultlon = 18.3;
             defaultlat = 49.8;
             break;
-        case "Plzeò":
+        case "PlzeÅˆ":
             defaultlon = 13.4;
             defaultlat = 49.7;
             break;
