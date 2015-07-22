@@ -8,3 +8,4 @@ test
 a simple script for caruso
 
 test2
+test3
